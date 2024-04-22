@@ -6,7 +6,7 @@ var _loginRequired = require('../middlewares/loginRequired'); var _loginRequired
 const router = new (0, _express.Router)();
 
 // Estes dois abaixo, não deveriam existir
-// router.get('/', userController.index); // Lista usuários
+//router.get('/', userController.index); // Lista usuários
 // router.get('/:id', userController.show); // Lista usuário
 
 router.post('/', _loginRequired2.default, _UserController2.default.store); // Cria usuario
